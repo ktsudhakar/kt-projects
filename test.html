@@ -30,9 +30,18 @@
         max-width: 25%;
         position: relative;
       }
+      #quicklink {
+        margin-top: 20px;
+      }
       .quick-link a {
         text-decoration: none;
-        color: #fd8c73;
+        text-align: center;
+        display: block;
+        background: #e8e8e8;
+        color: #3e3e3e;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 35px;
       }
       . quick-link a:hover {
         text-decoration: underline;
@@ -53,21 +62,32 @@
           text-align: center;
         }
       }
+       @media (min-width: 768px) and (max-width: 1023px) {
+          ul li {
+          width: 50%;
+          max-width: 50%;
+         }
+      }
       .gotop {
         position: fixed;
         bottom: 10px;
         z-index: 9;
         right: 10px;
-        color: #a1000b;
+        color: #000000;
         font-size: 12px;
         text-transform: uppercase;
+        background: #e8e8e8;
+        height: 20px;
+        padding: 0 10px;
+        line-height: 20px;
+        border-radius: 25px;
       }
       h1#suv + ul li:before {
         content: 'SUV';
         position: absolute;
         left: calc(50% - 60px);
         bottom: 0;
-        color: #337ab7;
+        color: #000;
         font-size: 18px;
         width: 120px;
         background: #e8e8e8;
@@ -80,7 +100,7 @@
         position: absolute;
         left: calc(50% - 60px);
         bottom: 0;
-        color: #337ab7;
+        color: #000;
         font-size: 18px;
         width: 120px;
         background: #e8e8e8;
@@ -93,7 +113,7 @@
         position: absolute;
         left: calc(50% - 60px);
         bottom: 0;
-        color: #337ab7;
+        color: #000;
         font-size: 18px;
         width: 120px;
         background: #e8e8e8;
@@ -104,9 +124,8 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>CARS</h1>
-      <div class="row quick-link" id="quicklink">
+    <div class="container" id="quicklink">
+      <div class="row quick-link">
           <div class="col-xs-4"><a href="#suv">SUV</a></div>
           <div class="col-xs-4"><a href="#sedan">Sedan</a></div>
           <div class="col-xs-4"><a href="#hatchbag">Hatchbag</a></div>
