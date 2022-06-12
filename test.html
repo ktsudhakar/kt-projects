@@ -29,8 +29,9 @@
         width: 25%;
         max-width: 25%;
         position: relative;
+        padding: 15px 15px 40px 15px;
       }
-      #quicklink {
+      .quicklink {
         margin-top: 20px;
       }
       .quick-link a {
@@ -53,7 +54,6 @@
           text-align: center;
           border: 1px solid #e5e5e5;
           border-bottom: none;
-          padding: 15px 15px 40px 15px;
         }
         ul li:last-child {
            border-bottom: 1px solid #e5e5e5;
@@ -64,20 +64,20 @@
       }
        @media (min-width: 768px) and (max-width: 1023px) {
           ul li {
-          width: 50%;
-          max-width: 50%;
+          width: 33.33%;
+          max-width: 33.33%;
          }
       }
       .gotop {
         position: fixed;
         bottom: 10px;
         z-index: 9;
-        right: 10px;
+        right: 20px;
         color: #000000;
         font-size: 12px;
         text-transform: uppercase;
         background: #e8e8e8;
-        height: 20px;
+        height: 23px;
         padding: 0 10px;
         line-height: 20px;
         border-radius: 25px;
@@ -123,8 +123,8 @@
     }
     </style>
   </head>
-  <body>
-    <div class="container" id="quicklink">
+  <body id="quicklink">
+    <div class="container">
       <div class="row quick-link">
           <div class="col-xs-4"><a href="#suv">SUV</a></div>
           <div class="col-xs-4"><a href="#sedan">Sedan</a></div>
