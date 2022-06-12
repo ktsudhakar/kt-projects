@@ -15,19 +15,20 @@
         font-family: 'Ubuntu', sans-serif;
       }
       svg {
-      display: none;
+        display: none;
       }
       ul {
-      display: flex;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
       }
       ul li {
-      list-style-type: none;
-      width: 25%;
-      max-width: 25%;
+        list-style-type: none;
+        width: 25%;
+        max-width: 25%;
+        position: relative;
       }
       .o-ybCXb a {
         pointer-events: none;
@@ -46,10 +47,13 @@
           text-align: center;
           border: 1px solid #e5e5e5;
           border-bottom: none;
-          padding: 15px;
+          padding: 15px 15px 40px 15px;
         }
         ul li:last-child {
            border-bottom: 1px solid #e5e5e5;
+        }
+        h1 {
+          text-align: center;
         }
       }
       .gotop {
@@ -61,6 +65,45 @@
         font-size: 12px;
         text-transform: uppercase;
       }
+      h1#suv + ul li:before {
+        content: 'SUV';
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: 0;
+        color: #337ab7;
+        font-size: 18px;
+        width: 120px;
+        background: #e8e8e8;
+        border-radius: 10px 10px 0 0;
+        height: 30px;
+        line-height: 30px;
+    }
+    h1#sedan + ul li:before {
+        content: 'SEDAN';
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: 0;
+        color: #337ab7;
+        font-size: 18px;
+        width: 120px;
+        background: #e8e8e8;
+        border-radius: 10px 10px 0 0;
+        height: 30px;
+        line-height: 30px;
+    }
+    h1#hatchbag + ul li:before {
+        content: 'hatchbag';
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: 0;
+        color: #337ab7;
+        font-size: 18px;
+        width: 120px;
+        background: #e8e8e8;
+        border-radius: 10px 10px 0 0;
+        height: 30px;
+        line-height: 30px;
+    }
     </style>
   </head>
   <body>
