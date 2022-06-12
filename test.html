@@ -29,8 +29,15 @@
       width: 25%;
       max-width: 25%;
       }
-      a {
+      .o-ybCXb a {
         pointer-events: none;
+      }
+      . quick-link a {
+        text-decoration: none;
+        color: #fd8c73;
+      }
+      . quick-link a:hover {
+        text-decoration: underline;
       }
       @media(max-width: 767px) {
         ul li {
@@ -49,10 +56,15 @@
   </head>
   <body>
     <div class="container">
+      <div class="row quick-link">
+          <div class="col"><a href="#suv">SUV</a></div>
+          <div class="col"><a href="#sedan">Sedan</a></div>
+          <div class="col"><a href="#hatchbag">Hatchbag</a></div>
+        </div>
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <div class="o-ybCXb o-cxkOxW o-cglRxs aGK5Mk o-fpkJwH o-dCyDMp ">
-            <h1>SUV</h1>
+            <h1 id="suv">SUV</h1>
             <ul class="o-cpnuEd o-XylGE">
               <li class="o-fHmpzP o-fznJzb o-fzpibK">
                 <div class="o-cpnuEd o-efHQCX o-bqHweY o-bIMsfE o-ItVGT o-eKWNKE o-dNhQyk  o-GFmfi o-dgwiHy o-fklLUJ o-cglRxs o-cYOpxG o-bCRRBE o-eKWNKE VxxMLn
@@ -1860,7 +1872,7 @@
                 </div>
               </li>
             </ul>
-            <h1>SEDAN</h1>
+            <h1 id="sedan">SEDAN</h1>
             <ul class="o-cpnuEd o-XylGE">
               <li class="o-fHmpzP o-fznJzb o-fzpibK">
                 <div class="o-cpnuEd o-efHQCX o-bqHweY o-bIMsfE o-ItVGT o-eKWNKE o-dNhQyk  o-GFmfi o-dgwiHy o-fklLUJ o-cglRxs o-cYOpxG o-bCRRBE o-eKWNKE VxxMLn
@@ -2756,7 +2768,7 @@
                 </div>
               </li>
             </ul>
-            <h1>Hatchbag</h1>
+            <h1 id="hatchbag">Hatchbag</h1>
             <ul class="o-cpnuEd o-XylGE">
               <li class="o-fHmpzP o-fznJzb o-fzpibK">
                 <div class="o-cpnuEd o-efHQCX o-bqHweY o-bIMsfE o-ItVGT o-eKWNKE o-dNhQyk  o-GFmfi o-dgwiHy o-fklLUJ o-cglRxs o-cYOpxG o-bCRRBE o-eKWNKE VxxMLn
