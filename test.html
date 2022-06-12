@@ -32,7 +32,7 @@
       .o-ybCXb a {
         pointer-events: none;
       }
-      . quick-link a {
+      .quick-link a {
         text-decoration: none;
         color: #fd8c73;
       }
@@ -52,14 +52,23 @@
            border-bottom: 1px solid #e5e5e5;
         }
       }
+      .gotop {
+        position: absolute:
+        bottom:0;
+        right: 10px;
+        color: #a1000b;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="row quick-link">
-          <div class="col"><a href="#suv">SUV</a></div>
-          <div class="col"><a href="#sedan">Sedan</a></div>
-          <div class="col"><a href="#hatchbag">Hatchbag</a></div>
+      <h1>CARS</h1>
+      <div class="row quick-link" id="quicklink">
+          <div class="col-xs-4"><a href="#suv">SUV</a></div>
+          <div class="col-xs-4"><a href="#sedan">Sedan</a></div>
+          <div class="col-xs-4"><a href="#hatchbag">Hatchbag</a></div>
         </div>
       <div class="row">
         <div class="col-md-12">
@@ -4268,5 +4277,6 @@
         </div>
       </div>
     </div>
+    <a class="gotop" href="#quicklink">GoTop</a>
   </body>
 </html>
